@@ -1,0 +1,1 @@
+[15-Jun-2008 18:59:36] PHP Parse error:  syntax error, unexpected '.' in D:\Web\test\txtgbook\skin\diego\impaginazione_mess.php on line 16

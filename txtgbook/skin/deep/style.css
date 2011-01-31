@@ -1,0 +1,130 @@
+body {
+ background-color: #efefef;
+ font-size: 10px; 
+ color: #666666; 
+ font-family: Verdana, Arial, Helvetica, sans-serif; 
+ text-align: center;
+}
+
+.testo, input, select, option, textarea {
+ font-size: 10px; 
+ color: black;
+ font-family: Verdana, Arial, Helvetica, sans-serif; 
+}
+
+.annuncio {
+	color: Blue;
+}
+.quote {
+  background-color: #efefef;
+  border: 1px dashed #5c88c8; 
+  width: 90%;
+  margin: auto;
+}
+.box { 
+ border: 1px solid #5c88c8; 
+ background-color: #FFFFFF;
+ margin: auto;
+ width: 545px;
+ font-size: 10px; 
+ color: #000000; 
+ font-family: Verdana, Arial, Helvetica, sans-serif; 
+}
+.tab_box {
+ border: 1px solid #5c88c8; 
+ margin: auto;
+ width: 545px;
+ background-color: #FFFFFF;
+ color: #000000; 
+ font-size: 10px; 
+ overflow: hidden;
+ font-family: Verdana, Arial, Helvetica, sans-serif; 
+}
+.separatore_titolo {
+ height: 6px;
+}
+.separatore {
+ height: 4px;
+}
+.tabella {
+ height: 18px;
+ width: 547px;
+ margin: auto;
+ background-image: url(bg_th.jpg);
+ height: 26px;
+}
+.titolo {
+ color: #FFFFFF;
+ text-align: right;
+ font-weight: bold;
+ font-size: 10px;
+ height:50%;
+ padding-right: 13px;
+ position: relative;
+ top: 25%;
+}
+.linea {
+ border-left: 1px solid #5c88c8;
+}
+
+.alert {
+ color: #FF0000;
+}
+
+.mess {
+ font-style: italic;
+}
+
+/* Collegamenti hypertestuali */
+a {
+ text-decoration:none;
+ color: #000000;
+}
+a:visited {
+ text-decoration:none;
+ color: #000000;
+}
+a:hover {
+ text-decoration:underline; 
+ color: #5c88c8;
+}
+a.copy {
+ text-decoration:none;
+ color: #000000;
+ font-weight: normal;
+}
+a.copy:visited {
+ text-decoration:none;
+ color: #000000;
+ font-weight: normal;
+}
+a.copy:hover {
+ text-decoration:underline; 
+ color: #5c88c8;
+ font-weight: normal;
+}
+a.title,a.title:visited {
+ color: #008800; 
+ font-size: 13px;
+ font-weight: bold;
+ text-decoration: none;
+}
+a.title:hover {
+ color: #5c88c8;
+ font-size: 13px;
+ font-weight: bold;
+ text-decoration: underline;
+}
+a.scrivi,a.scrivi:visited {
+ color: #0066FF;
+}
+a.scrivi:hover {
+ color: black;
+ }
+.bbcode {
+ background-color: #E6F2FF;
+ border: 1px solid #E6F2FF;
+}
+.bbcode:hover {
+ border: 1px dashed #0080FF;
+}

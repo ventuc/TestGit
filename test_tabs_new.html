@@ -1,0 +1,156 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Documento senza titolo</title>
+
+<style type="text/css">
+
+#tabs {
+	padding-left: 10px;
+}
+
+h2 {
+	margin: 0px;
+}
+
+#container {
+	clear: both;
+	height: 1%;
+	background-color: #EBEBEB;
+}
+
+#container h4 {
+	margin: 0px;
+}
+
+.default {
+	display: block;
+}
+
+.nodefault {
+	display: none;
+}
+
+div.tab_selected {
+	background-color: #EBEBEB;
+	border-bottom: 1px solid #EBEBEB;
+	float: left;
+	margin-right: 2px;
+	cursor: default;
+}
+
+div.tab_unselected {
+	background-color: #D5D5D5;
+	float: left;
+	margin-right: 2px;
+	cursor: pointer;
+}
+
+div.corner_top_left {
+	background: url(./corners/corner_top_left.gif) no-repeat top left;
+}
+
+div.corner_top_right {
+	background: url(./corners/corner_top_right.gif) no-repeat top right;
+}
+
+div.corner_bottom_right {
+	background: url(./corners/corner_bottom_right.gif) no-repeat bottom right;
+}
+
+div.corner_bottom_left {
+	background: url(./corners/corner_bottom_left.gif) no-repeat bottom left;
+}
+
+</style>
+
+<script language="javascript">
+
+function changeTabDiv(tab){
+	
+	var i = 1;
+	var div = document.getElementById("div" + i);
+	while (div != null){
+		if (tab == i){
+			div.style.display = "block";
+			document.getElementById("tab" + i).className = "tab_selected";
+		}
+		else {
+			div.style.display = "none";
+			document.getElementById("tab" + i).className = "tab_unselected";
+		}
+		
+		i++
+		div = document.getElementById("div" + i);
+	}
+}
+
+</script>
+
+</head>
+
+<body>
+
+<div id="tabs">
+    <div id="tab1" class="tab_selected" onclick="javascript: changeTabDiv(1);">
+        <div class="corner_top_left">
+            <div class="corner_top_right">
+                <h2>Tab 1</h2>
+            </div>
+        </div>
+    </div>
+    
+    <div id="tab2" class="tab_unselected" onclick="javascript: changeTabDiv(2);">
+        <div class="corner_top_left">
+            <div class="corner_top_right">
+                <h2>Tab 2</h2>
+            </div>
+        </div>
+    </div>
+    
+    <div id="tab3" class="tab_unselected" onclick="javascript: changeTabDiv(3);">
+        <div class="corner_top_left">
+            <div class="corner_top_right">
+                <h2>Tab 3</h2>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="container">
+    <div class="corner_top_left">
+        <div class="corner_top_right">
+            <div class="corner_bottom_right">
+                <div class="corner_bottom_left">
+                    
+                        <div id="div1" class="default">
+                            <h4>Div 1</h4>
+                            <p>Questo è il div 1. Dentro c'è un testo corto.</p>
+                        </div>
+                        
+                        <div id="div2" class="nodefault">
+                            <h4>Div 2</h4>
+                            <p>Questo è il div 2. Dentro c'è un testo lungo.
+                            Bla bla bla bla bla bla bla bla bla bla bla bla bla
+                            bla bla bla bla bla bla bla bla bla
+                            bla bla blaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+                            aaaaaaaa.</p>
+                        </div>
+                        
+                        <div id="div3" class="nodefault">
+                            <h4>Div 3</h4>
+                            <p>Questo è il div 2. Dentro c'è un testo medio.
+                            Bla bla bla bla bla bla bla bla bla bla bla bla bla
+                            bla bla bla bla bla bla bla bla bla bla bla bla bla
+                            bla bla bla bla bla bla bla bla bla bla.</p>
+                        </div>
+                
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

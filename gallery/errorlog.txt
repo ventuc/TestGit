@@ -1,0 +1,16 @@
+[26-Sep-2008 23:54:52] PHP Fatal error:  Maximum execution time of 30 seconds exceeded in D:\Web\test\gallery\SmartImage.class.php on line 45
+[27-Sep-2008 00:08:46] PHP Warning:  imagecreatetruecolor() [<a href='function.imagecreatetruecolor'>function.imagecreatetruecolor</a>]: Invalid image dimensions in D:\Web\test\gallery\SmartImage.class.php on line 109
+[27-Sep-2008 00:08:46] PHP Warning:  imagecopyresampled(): supplied argument is not a valid Image resource in D:\Web\test\gallery\SmartImage.class.php on line 110
+[27-Sep-2008 00:08:46] PHP Warning:  imagesx(): supplied argument is not a valid Image resource in D:\Web\test\gallery\SmartImage.class.php on line 305
+[27-Sep-2008 00:08:46] PHP Warning:  imagesy(): supplied argument is not a valid Image resource in D:\Web\test\gallery\SmartImage.class.php on line 306
+[27-Sep-2008 00:08:46] PHP Warning:  imagejpeg(): supplied argument is not a valid Image resource in D:\Web\test\gallery\SmartImage.class.php on line 241
+[27-Sep-2008 00:18:14] PHP Warning:  imagecreatetruecolor() [<a href='function.imagecreatetruecolor'>function.imagecreatetruecolor</a>]: Invalid image dimensions in D:\Web\test\gallery\SmartImage.class.php on line 109
+[27-Sep-2008 00:18:14] PHP Warning:  imagecopyresampled(): supplied argument is not a valid Image resource in D:\Web\test\gallery\SmartImage.class.php on line 110
+[27-Sep-2008 00:18:14] PHP Warning:  imagesx(): supplied argument is not a valid Image resource in D:\Web\test\gallery\SmartImage.class.php on line 305
+[27-Sep-2008 00:18:14] PHP Warning:  imagesy(): supplied argument is not a valid Image resource in D:\Web\test\gallery\SmartImage.class.php on line 306
+[27-Sep-2008 00:18:14] PHP Warning:  imagejpeg(): supplied argument is not a valid Image resource in D:\Web\test\gallery\SmartImage.class.php on line 241
+[27-Sep-2008 00:18:14] PHP Warning:  imagecreatetruecolor() [<a href='function.imagecreatetruecolor'>function.imagecreatetruecolor</a>]: Invalid image dimensions in D:\Web\test\gallery\SmartImage.class.php on line 109
+[27-Sep-2008 00:18:14] PHP Warning:  imagecopyresampled(): supplied argument is not a valid Image resource in D:\Web\test\gallery\SmartImage.class.php on line 110
+[27-Sep-2008 00:18:14] PHP Warning:  imagesx(): supplied argument is not a valid Image resource in D:\Web\test\gallery\SmartImage.class.php on line 305
+[27-Sep-2008 00:18:14] PHP Warning:  imagesy(): supplied argument is not a valid Image resource in D:\Web\test\gallery\SmartImage.class.php on line 306
+[27-Sep-2008 00:18:14] PHP Warning:  imagejpeg(): supplied argument is not a valid Image resource in D:\Web\test\gallery\SmartImage.class.php on line 241

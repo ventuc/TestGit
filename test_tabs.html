@@ -1,0 +1,336 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Documento senza titolo</title>
+
+<style type="text/css">
+
+#tabs {
+	padding-left: 10px;
+}
+
+h2 {
+	display: inline;
+}
+
+#container {
+	clear: both;
+	height: 1%;
+	background-color: #EBEBEB;
+}
+
+#container h4 {
+	margin: 0px;
+}
+
+#div2, #div3 {
+	display: none;
+}
+
+#tab1 {
+	margin-right: 2px;
+	float: left;
+}
+
+#tab2, #tab3 {
+	margin-right: 2px;
+	float: left;
+}
+
+div.tab_selected {
+	background-color: #EBEBEB;
+	border-bottom: 1px solid #EBEBEB;
+}
+
+div.tab_unselected {
+	background-color: #D5D5D5;
+}
+
+div.corner_top_left {
+	background: url(./corners/corner_top_left.gif) no-repeat top left;
+}
+
+div.corner_top_right {
+	background: url(./corners/corner_top_right.gif) no-repeat top right;
+}
+
+div.corner_bottom_right {
+	background: url(./corners/corner_bottom_right.gif) no-repeat bottom right;
+}
+
+div.corner_bottom_left {
+	background: url(./corners/corner_bottom_left.gif) no-repeat bottom left;
+}
+
+#tabber {
+	border: none;
+}
+
+#tabber ul {
+	margin: 0px;
+	padding: 0px;
+}
+
+#tabber li {
+	display: inline;
+	border: 1px solid #0000CC;
+	background: #CCCCCC;
+}
+
+#divUl2, #divUl3 {
+	display: none;
+}
+
+#tabber2 {
+	border: none;
+	background: url(table_bg.gif) left top;
+}
+
+#tabber2 ul {
+	margin: 0px;
+	padding: 0px;
+	width: 100%;	
+}
+
+#tabber2 li {
+	display: inline;
+	float: left;
+	width: 5%;
+	text-align: center;
+}
+
+#tabber2 li.first {
+	width: 1%;
+	background-color: #FFFFFF;
+	border-bottom: 1px solid #FF0099;
+	border-top: 1px solid #FFFFFF;
+}
+
+#tabber2 li.last {
+	width: 83%;
+	background-color: #FFFFFF;
+	border-bottom: 1px solid #FF0099;
+	border-top: 1px solid #FFFFFF;
+}
+
+#divUl2_1, #divUl2_2, #divUl2_3 {
+	border: 1px solid #FF0099;
+	border-top: none;
+	clear: both;
+}
+
+#divUl2_2, #divUl2_3 {
+	display: none;
+}
+
+li.newClass {
+	background: none;
+	border: 1px solid #FF0099;
+	border-bottom: none;
+}
+
+li.normalClass {
+	background: #CCCCCC;
+	border: none;
+	border-bottom: 1px solid #FF0099;
+	border-left: 1px solid #FFFFFF;
+	border-top: 1px solid #FFFFFF;
+}
+
+</style>
+
+<script language="javascript">
+
+function changeTabDiv(tab){
+	var div1 = document.getElementById("div1");
+	var div2 = document.getElementById("div2");
+	var div3 = document.getElementById("div3");
+	
+	if (tab == 1){
+		div1.style.display = "block";
+		document.getElementById("tab1").className = "tab_selected";
+	}
+	else {
+		div1.style.display = "none";
+		document.getElementById("tab1").className = "tab_unselected";
+	}
+	
+	if (tab == 2){
+		div2.style.display = "block";
+		document.getElementById("tab2").className = "tab_selected";
+	}
+	else {
+		div2.style.display = "none";
+		document.getElementById("tab2").className = "tab_unselected";
+	}
+	
+	if (tab == 3){
+		div3.style.display = "block";
+		document.getElementById("tab3").className = "tab_selected";
+	}
+	else {
+		div3.style.display = "none";
+		document.getElementById("tab3").className = "tab_unselected";
+	}
+}
+
+function changeTabUl(tab){
+	var div1 = document.getElementById("divUl1");
+	var div2 = document.getElementById("divUl2");
+	var div3 = document.getElementById("divUl3");
+	
+	(tab == 1)?(div1.style.display = "block"):(div1.style.display = "none");
+	(tab == 2)?(div2.style.display = "block"):(div2.style.display = "none");
+	(tab == 3)?(div3.style.display = "block"):(div3.style.display = "none");
+}
+
+function changeTabUl2(tab){
+	var div1 = document.getElementById("divUl2_1");
+	var div2 = document.getElementById("divUl2_2");
+	var div3 = document.getElementById("divUl2_3");
+	
+	if (tab == 1){
+		div1.style.display = "block";
+		document.getElementById("li1").className = "newClass";
+	}
+	else {
+		div1.style.display = "none";
+		document.getElementById("li1").className = "normalClass";
+	}
+	
+	if (tab == 2){
+		div2.style.display = "block";
+		document.getElementById("li2").className = "newClass";
+	}
+	else {
+		div2.style.display = "none";
+		document.getElementById("li2").className = "normalClass";
+	}
+	
+	if (tab == 3){
+		div3.style.display = "block";
+		document.getElementById("li3").className = "newClass";
+	}
+	else {
+		div3.style.display = "none";
+		document.getElementById("li3").className = "normalClass";
+	}
+}
+
+</script>
+
+</head>
+
+<body>
+
+<div id="tabs">
+    <div id="tab1" class="tab_selected" onclick="javascript: changeTabDiv(1);">
+        <div class="corner_top_left">
+            <div class="corner_top_right">
+                <h2>Tab 1</h2>
+            </div>
+        </div>
+    </div>
+    
+    <div id="tab2" class="tab_unselected" onclick="javascript: changeTabDiv(2);">
+        <div class="corner_top_left">
+            <div class="corner_top_right">
+                <h2>Tab 2</h2>
+            </div>
+        </div>
+    </div>
+    
+    <div id="tab3" class="tab_unselected" onclick="javascript: changeTabDiv(3);">
+        <div class="corner_top_left">
+            <div class="corner_top_right">
+                <h2>Tab 3</h2>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="container">
+    <div class="corner_top_left">
+        <div class="corner_top_right">
+            <div class="corner_bottom_right">
+                <div class="corner_bottom_left">
+                    
+                        <div id="div1">
+                            <h4>Div 1</h4>
+                            <p>Questo è il div 1. Dentro c'è un testo corto.</p>
+                        </div>
+                        
+                        <div id="div2">
+                            <h4>Div 2</h4>
+                            <p>Questo è il div 2. Dentro c'è un testo lungo.
+                            Bla bla bla bla bla bla bla bla bla bla bla bla bla
+                            bla bla bla bla bla bla bla bla bla
+                            bla bla blaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+                            aaaaaaaa.</p>
+                        </div>
+                        
+                        <div id="div3">
+                            <h4>Div 3</h4>
+                            <p>Questo è il div 2. Dentro c'è un testo medio.
+                            Bla bla bla bla bla bla bla bla bla bla bla bla bla
+                            bla bla bla bla bla bla bla bla bla bla bla bla bla
+                            bla bla bla bla bla bla bla bla bla bla.</p>
+                        </div>
+                
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<p>Tab con lista. Le etichette dei tab solo list item.</p>
+
+<div id="tabber">
+
+    <ul>
+        <li onclick="javascript: changeTabUl(1);">Tab 1</li>
+        <li onclick="javascript: changeTabUl(2);">Tab 2</li>
+        <li onclick="javascript: changeTabUl(3);">Tab 3</li>
+    </ul>
+
+	<div id="divUl1">Div 1 bla bla bla bla bla bla bla bla bla bla bla bla bla bla
+          bla bla bla bla bla bla bla bl</div>
+    <div id="divUl2">Div 2 bla bla bla bla bla blala bla bla bla
+            bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
+             bla bla bla bla bla</div>
+    <div id="divUl3">Div 3 bla bla bla bla bla bla bl bla bla bla bla bla bla bla
+          bla bla bla bla bla bla bla bl</div>
+
+</div>
+
+<p>test sfondo</p>
+
+<div id="tabber2">
+
+    <ul>
+    	<li class="first">&nbsp;</li>
+        <li id="li1" class="newClass" onclick="javascript: changeTabUl2(1);">Tab 1</li>
+        <li id="li2" class="normalClass" onclick="javascript: changeTabUl2(2);">Tab 2</li>
+        <li id="li3" class="normalClass" onclick="javascript: changeTabUl2(3);">Tab 3</li>
+        <li class="last">&nbsp;</li>
+    </ul>
+
+	<div id="divUl2_1">Div 1 bla bla bla bla bla bla bla bla bla bla bla bla bla bla
+          bla bla bla bla bla bla bla bl</div>
+    <div id="divUl2_2">Div 2 bla bla bla bla bla blala bla bla bla
+            bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
+             bla bla bla bla bla</div>
+    <div id="divUl2_3">Div 3 bla bla bla bla bla bla bl bla bla bla bla bla bla bla
+          bla bla bla bla bla bla bla bl</div>
+
+</div>
+
+<p>&nbsp;</p>
+
+<div style="display: inline; background-color: #CCCCCC">ciao</div>
+<div style="margin: 0px; display: inline; background-color: #CCCCCC">ciao2</div>
+<div style="margin: 0px; background-color: #CCCCCC">ciao</div>
+
+</body>
+</html>
