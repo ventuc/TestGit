@@ -6,7 +6,7 @@ if (trim($c) == null){
 	echo "e' null";
 }
 else {
-	echo "non e' null";
+	echo "non e' null... porca vacca";
 }
 
 ?>
