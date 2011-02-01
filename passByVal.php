@@ -2,7 +2,6 @@
 
 
 // Definizione della classe MyClass
-
 class Intero {
 
 	public $valore; // valore dell'intero
